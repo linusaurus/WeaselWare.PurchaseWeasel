@@ -1,18 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using PurchaseSQLDB.DataAccess.EFClasses;
+using PurchaseWeasel_7.ViewModels;
 
 namespace PurchaseWeasel_7
 {
@@ -21,11 +9,23 @@ namespace PurchaseWeasel_7
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        private const string ConnectionString = @"Server=192.168.10.3;database=Badger;uid=sa;pwd=Kx09a32x;";
+        private MainViewModel _viewModel;
 
-        public MainWindow()
-        {
+        public MainWindow(MainViewModel viewModel)
+        {           
             InitializeComponent();
+            _viewModel  = viewModel;
+            DataContext = _viewModel;
+            Loaded += MainWindow_Loaded;
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            _viewModel.Load();
         }
     }
+
+
+    
 }

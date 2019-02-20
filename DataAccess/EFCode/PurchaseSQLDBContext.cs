@@ -1,9 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using PurchaseSQLDB.DataAccess;
+
 using PurchaseSQLDB.DataAccess.EFClasses;
 using PurchaseSQLDB.DataAccess.Configurations;
 
@@ -13,12 +9,19 @@ namespace PurchaseSQLDB.DataAccess.EFCode
     public class PurchaseSQLDBContext : DbContext
     {
 
-        //private const string ConnectionString = @"Server=192.168.10.22;database=Badger;uid=sa;pwd=Kx09a32x;";
+        private const string ConnectionString = @"Server=192.168.10.3;database=Badger;uid=sa;pwd=Kx09a32x;";
+        
 
-        public PurchaseSQLDBContext():base()
+        public PurchaseSQLDBContext() : base()
         {
 
         }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(ConnectionString);
+        }
+
 
         public PurchaseSQLDBContext(DbContextOptions<PurchaseSQLDBContext> options)
             : base(options) { }

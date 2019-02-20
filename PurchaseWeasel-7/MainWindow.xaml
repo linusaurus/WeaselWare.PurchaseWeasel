@@ -3,28 +3,44 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PurchaseWeasel_7"
+        xmlns:local="clr-namespace:PurchaseWeasel_7"            
         mc:Ignorable="d"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
         Title="Purchase-Weasel"
-        Height="602"
-        Width="737">
-    <Grid Margin="6">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="40"/>
-        </Grid.RowDefinitions>
-        <ToolBarTray>
-            <ToolBar Band="1" BandIndex="1" Background="Purple">
-                <Button>
-                    <Image Source="/icons/database-search.png"/>
-                </Button>
-            </ToolBar>
-        </ToolBarTray>
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button  Margin="3"   Width="75" VerticalAlignment="Bottom"  HorizontalAlignment="Left"  Content="Cancel"></Button>
-            <Button  Margin="3"   Width="75" VerticalAlignment="Bottom"  HorizontalAlignment="Left"  Content="Save"></Button>
-        </StackPanel>
+        Height="690"
+        Width="900">
+    <Window.Resources>
        
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ListView ItemsSource="{Binding PurchaseOrders}"
+                  SelectedItem="{Binding SelectedOrder,Mode=TwoWay}"
+                  DisplayMemberPath="OrderNum"/>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="OrderDate" Margin="10 10 10 0"/>
+            <TextBox Grid.Row="1" Text="{Binding SelectedOrder.OrderDate, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Margin="10 0 10 10 "/>
+            <Label Content="OrderNum" Margin="10 10 10 0"/>
+            <TextBox Grid.Row="2" Text="{Binding SelectedOrder.OrderNum, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Margin="10 0 10 10 "/>
+
+            <Label Content="Job Num" Margin="10 10 10 0"/>
+            <TextBox Grid.Row="3" Text="{Binding SelectedOrder.Job_id, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Margin="10 0 10 10 "/>
+
+          
+
+      
+        </Grid>
     </Grid>
 </Window>
