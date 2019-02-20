@@ -22,6 +22,7 @@ namespace PurchaseWeasel_7
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
+            
             PurchaseOrderService service = new PurchaseOrderService();
 
             var model = new MainViewModel(service);
