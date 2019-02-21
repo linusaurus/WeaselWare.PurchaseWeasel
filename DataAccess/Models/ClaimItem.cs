@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using PurchaseSQLDB.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.EFClasses;
 
 
-namespace PurchaseSQLDB.DataAccess.EFClasses
+namespace PurchaseWeasel.DataAccess.EFClasses
 {
     public class ClaimItem
     {

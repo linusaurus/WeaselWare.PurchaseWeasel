@@ -1,31 +1,44 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
-using PurchaseWeasel_7.ViewModels;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using PurchaseWeasel.DataAccess.Services;
+using PurchaseWeasel.UI.ViewModels;
 
-namespace PurchaseWeasel_7
+namespace PurchaseWeasel.UI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const string ConnectionString = @"Server=192.168.10.3;database=Badger;uid=sa;pwd=Kx09a32x;";
-        private MainViewModel _viewModel;
+        private MainViewModel _vm;
 
-        public MainWindow(MainViewModel viewModel)
-        {           
+        public MainWindow(MainViewModel vm)
+        {
+           
             InitializeComponent();
-            _viewModel  = viewModel;
-            DataContext = _viewModel;
+            _vm = vm;
+            this.DataContext = _vm;
             Loaded += MainWindow_Loaded;
+            
+
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            _viewModel.Load();
+            _vm.Load();
+            OrdersList.ItemsSource = _vm.PurchaseOrders;
+              
         }
     }
-
-
-    
 }

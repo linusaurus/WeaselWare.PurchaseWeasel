@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using PurchaseSQLDB.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.EFClasses;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System.ComponentModel.DataAnnotations;
@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations;
 
 
 
-namespace PurchaseSQLDB.DataAccess.EFClasses
+namespace PurchaseWeasel.DataAccess.EFClasses
 {
     public class Category
     {

@@ -1,13 +1,14 @@
 ﻿using Autofac;
-using PurchaseSQLDB.DataAccess.Services;
-using PurchaseWeasel_7.ViewModels;
+using PurchaseWeasel.DataAccess.Services;
+using PurchaseWeasel.UI.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PurchaseWeasel.UI;
 
-namespace PurchaseWeasel_7.Startup
+namespace PurchaseWeasel.UI.Startup
 {
     public class Bootstrapper
     {

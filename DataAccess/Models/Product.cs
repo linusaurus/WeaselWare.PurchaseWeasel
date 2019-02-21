@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using PurchaseSQLDB.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.EFClasses;
 
 public class Product
 {

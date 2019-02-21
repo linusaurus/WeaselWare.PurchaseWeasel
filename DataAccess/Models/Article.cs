@@ -1,8 +1,8 @@
 using System;
-using PurchaseSQLDB.DataAccess.EFCode;
+using PurchaseWeasel.DataAccess.EFCode;
 
 
-namespace PurchaseSQLDB.DataAccess.EFClasses
+namespace PurchaseWeasel.DataAccess.EFClasses
 {
     public class Article
     {

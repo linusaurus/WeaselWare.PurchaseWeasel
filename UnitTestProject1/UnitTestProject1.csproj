@@ -136,9 +136,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+    <ProjectReference Include="..\DataAccess\PurchaseWeasel.DataAccess.csproj">
       <Project>{332a629b-1fa6-4ddc-bb5c-836b35f2ed8e}</Project>
-      <Name>DataAccess</Name>
+      <Name>PurchaseWeasel.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\PurchaseWeasel-7\PurchaseWeasel.UI.csproj">
       <Project>{6562fc1b-4b39-45ba-ba56-7143b8d2b181}</Project>

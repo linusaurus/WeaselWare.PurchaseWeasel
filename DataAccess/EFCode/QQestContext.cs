@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using PurchaseSQLDB.DataAccess;
-using PurchaseSQLDB.DataAccess.EFClasses;
-using PurchaseSQLDB.DataAccess.Configurations;
+using PurchaseWeasel.DataAccess;
+using PurchaseWeasel.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.Configurations;
 
 
-namespace PurchaseSQLDB.DataAccess.EFCode
+namespace PurchaseWeasel.DataAccess.EFCode
 {
     public class QQestContext : DbContext
     {

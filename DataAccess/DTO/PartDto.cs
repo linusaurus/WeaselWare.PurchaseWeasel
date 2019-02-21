@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using PurchaseSQLDB.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.EFClasses;
 using System.ComponentModel.DataAnnotations;
 
-namespace Weaselware.Lemur.DTO
+namespace PurchaseWeasel.DataAccess
 {
     public class PartDto
     {

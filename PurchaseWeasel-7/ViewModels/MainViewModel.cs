@@ -4,11 +4,11 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PurchaseSQLDB.DataAccess.Services;
-using PurchaseSQLDB.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.Services;
+using PurchaseWeasel.DataAccess.EFClasses;
 using System.ComponentModel;
 
-namespace PurchaseWeasel_7.ViewModels
+namespace PurchaseWeasel.UI.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
@@ -22,15 +22,13 @@ namespace PurchaseWeasel_7.ViewModels
         {
             PurchaseOrders = new List<PurchaseOrder>();
             _purchaseOrderService = purchaseOrderService;
-
+           
         }
 
         public void Load()
         {
 
-            //PurchaseOrders.Clear();
-            PurchaseOrders.Add(new PurchaseOrder() { OrderDate = DateTime.Today, OrderNum = 1102, SupplierID = 123, EmployeeID = 8, OrderTotal = 12.35m });
-
+           //PurchaseOrders.Clear();      
            PurchaseOrders = _purchaseOrderService.GetAll();
            
         }

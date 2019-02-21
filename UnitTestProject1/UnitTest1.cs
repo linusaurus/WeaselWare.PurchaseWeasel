@@ -1,10 +1,10 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PurchaseSQLDB.DataAccess.EFCode;
+using PurchaseWeasel.DataAccess.EFCode;
 using System.Collections.Generic;
-using PurchaseSQLDB.DataAccess.EFClasses;
-using PurchaseSQLDB.DataAccess.Services;
-using PurchaseWeasel_7.ViewModels;
+using PurchaseWeasel.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.Services;
+using PurchaseWeasel.UI.ViewModels;
 
 namespace UnitTestProject1
 {

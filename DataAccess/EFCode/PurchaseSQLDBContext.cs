@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PurchaseWeasel.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.Configurations;
 
-using PurchaseSQLDB.DataAccess.EFClasses;
-using PurchaseSQLDB.DataAccess.Configurations;
 
-
-namespace PurchaseSQLDB.DataAccess.EFCode
+namespace PurchaseWeasel.DataAccess.EFCode
 {
     public class PurchaseSQLDBContext : DbContext
     {

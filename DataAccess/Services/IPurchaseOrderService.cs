@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using PurchaseSQLDB.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.EFClasses;
 
-namespace PurchaseSQLDB.DataAccess.Services
+namespace PurchaseWeasel.DataAccess.Services
 {
     public interface IPurchaseOrderService
     {

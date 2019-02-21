@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurchaseWeasel.UI", "PurchaseWeasel-7\PurchaseWeasel.UI.csproj", "{6562FC1B-4B39-45BA-BA56-7143B8D2B181}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{332A629B-1FA6-4DDC-BB5C-836B35F2ED8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PurchaseWeasel.DataAccess", "DataAccess\PurchaseWeasel.DataAccess.csproj", "{332A629B-1FA6-4DDC-BB5C-836B35F2ED8E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{ACCB9831-9A8F-4B15-B8AE-E14848BD4088}"
 EndProject

@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using PurchaseSQLDB.DataAccess.EFClasses;
-using PurchaseSQLDB.DataAccess.EFCode;
-using Weaselware.Lemur.DTO;
+using PurchaseWeasel.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.EFCode;
+using PurchaseWeasel.DataAccess.DTO;
 
 
 
-namespace Weaselware.Lemur.Services
+namespace PurchaseWeasel.DataAccess.Services
 {
    
     public class InventoryService

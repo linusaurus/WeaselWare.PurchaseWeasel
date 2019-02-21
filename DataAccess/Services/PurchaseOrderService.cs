@@ -1,5 +1,5 @@
-﻿using PurchaseSQLDB.DataAccess.EFClasses;
-using PurchaseSQLDB.DataAccess.EFCode;
+﻿using PurchaseWeasel.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.EFCode;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace PurchaseSQLDB.DataAccess.Services
+namespace PurchaseWeasel.DataAccess.Services
 {
     public class PurchaseOrderService : IPurchaseOrderService
     {

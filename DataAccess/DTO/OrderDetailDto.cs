@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using PurchaseSQLDB.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.EFClasses;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using PurchaseSQLDB.DataAccess.EFCode;
+using PurchaseWeasel.DataAccess.EFCode;
 
-namespace Weaselware.Lemur.DTO
+namespace PurchaseWeasel.DataAccess
 {
     public class OrderDetailDto
     {

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using PurchaseSQLDB.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.EFClasses;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace PurchaseSQLDB.DataAccess.Configurations
+namespace PurchaseWeasel.DataAccess.Configurations
 {
     public class InventoryConfig : IEntityTypeConfiguration<Inventory>
     {

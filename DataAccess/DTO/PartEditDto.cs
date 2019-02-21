@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using PurchaseSQLDB.DataAccess.EFClasses;
-using Weaselware.Lemur.DTO;
+using PurchaseWeasel.DataAccess.EFClasses;
+using PurchaseWeasel.DataAccess.DTO;
 
-namespace Weaselware.Lemur.DTO
+namespace PurchaseWeasel.DataAccess
 {
     public class PartEditDto
     {

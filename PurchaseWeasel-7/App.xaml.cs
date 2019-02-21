@@ -5,13 +5,14 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using PurchaseSQLDB.DataAccess;
-using PurchaseSQLDB.DataAccess.Services;
-using PurchaseWeasel_7.ViewModels;
+using PurchaseWeasel.DataAccess;
+using PurchaseWeasel.DataAccess.Services;
+using PurchaseWeasel.UI.ViewModels;
 using Autofac;
-using PurchaseWeasel_7.Startup;
+using PurchaseWeasel.UI;
+using PurchaseWeasel.UI.Startup;
 
-namespace PurchaseWeasel_7
+namespace PurchaseWeasel.UI
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -23,12 +24,13 @@ namespace PurchaseWeasel_7
         private void Application_Startup(object sender, StartupEventArgs e)
         {
             
-            PurchaseOrderService service = new PurchaseOrderService();
 
-            var model = new MainViewModel(service);
-            var mainWindow = new MainWindow(model);          
-            mainWindow.Show();    
-         }
+            var bootstrapper = new Bootstrapper();
+            var container = bootstrapper.Bootstrap();
+
+            var mainWindow = container.Resolve<MainWindow>();
+            mainWindow.Show();
+        }
 
         
     }

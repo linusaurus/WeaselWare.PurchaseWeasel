@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace PurchaseWeasel_7.ViewModels
+namespace PurchaseWeasel.UI.ViewModels
 {
     public class ViewModelBase : INotifyPropertyChanged
     {
